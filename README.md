@@ -5,6 +5,11 @@ This repository hosts the production-grade deployment runbooks, isolated configu
 The architecture uniquely implements end-to-end logical network slicing via discrete Slice/Service Types (**SST 1, 2, 3, 4**) routed across individual, dedicated User Plane Functions (**UPF1 to UPF4**). To overcome hardware-level OpenFlow 1.3 metering limitations on physical edge fabrics, this testbed utilizes a **Hybrid Control Plane Architecture**: a physical NETGEAR M4300 OpenFlow Hardware Switch managed by the Ryu SDN Framework orchestrates the Layer-2 underlying data-plane fabric, while strict Quality of Experience (QoE) boundaries and SLA constraints are enforced directly at the core gateway interfaces via Linux Traffic Control (`tc`) Hierarchical Token Bucket (HTB) queues.
 
 ---
+### 📚 Essential Core Knowledge Foundations
+For a granular, foundational overview of 5G infrastructure dynamics, architectural components, and structural mechanics, refer to the preliminary system documentation engineering workspace:
+👉 **[5G Network Architecture Reference Ledger (Notion Base Workspace)](https://app.notion.com/p/5g-Network-37f36f812f3c8024b7e3c5ea11f44b72?source=copy_link)**
+
+---
 
 ## 🏗️ System Architecture & Network Topology
 
