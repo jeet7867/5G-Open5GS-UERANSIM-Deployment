@@ -1,0 +1,83 @@
+# IMSI number of the UE. IMSI = [MCC|MNC|MSISDN]
+supi: 'imsi-999700000000004'
+# Mobile Country Code value of HPLMN
+mcc: '999'
+# Mobile Network Code value of HPLMN
+mnc: '70'
+# SUCI Protection Scheme
+protectionScheme: 0
+# Home Network Public Key
+homeNetworkPublicKey: '5a8d38864820197c3394b92613b20b91633cbd897119273bf8e4a6f4eec0a650'
+# Home Network Public Key ID
+homeNetworkPublicKeyId: 1
+# Routing Indicator
+routingIndicator: '0000'
+
+# Permanent subscription key
+key: '465B5CE8B199B49FAA5F0A2EE238A6BC'
+# Operator Code (OPC)
+op: '7d2ed9d64097bd66ba6599c41428c1d7'
+# OP type
+opType: 'OPC'
+# Authentication Management Field
+amf: '8000'
+# IMEI
+imei: '356938035643806'
+# IMEISV
+imeiSv: '4370816125816154'
+
+# Network mask used for TUN interface
+tunNetmask: '255.255.255.0'
+
+# gNB IP address
+gnbSearchList:
+  - 192.168.1.20
+
+# UAC Access Identities Configuration
+uacAic:
+  mps: false
+  mcs: false
+
+# UAC Access Control Class
+uacAcc:
+  normalClass: 0
+  class11: false
+  class12: false
+  class13: false
+  class14: false
+  class15: false
+
+# Initial PDU Session
+sessions:
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 4
+      sd: 0x000000
+
+# Configured NSSAI
+configured-nssai:
+  - sst: 4
+    sd: 0x000000
+
+# Default NSSAI
+default-nssai:
+  - sst: 4
+    sd: 0x000000
+
+# Integrity algorithms
+integrity:
+  IA1: true
+  IA2: true
+  IA3: true
+
+# Ciphering algorithms
+ciphering:
+  EA1: true
+  EA2: true
+  EA3: true
+
+# Integrity protection maximum data rate
+integrityMaxRate:
+  uplink: 'full'
+  downlink: 'full'

@@ -1,0 +1,16 @@
+logger:
+  file:
+    path: /var/log/open5gs/upf2.log
+
+upf:
+  pfcp:
+    server:
+      - address: 127.0.0.12
+  gtpu:
+    server:
+      - address: 192.168.1.12
+  session:
+    - subnet: 10.46.0.0/16
+      gateway: 10.46.0.1
+      dev: ogstun2
+      dnn: internet2

@@ -1,0 +1,16 @@
+logger:
+  file:
+    path: /var/log/open5gs/upf3.log
+
+upf:
+  pfcp:
+    server:
+      - address: 127.0.0.13
+  gtpu:
+    server:
+      - address: 192.168.1.13
+  session:
+    - subnet: 10.47.0.0/16
+      gateway: 10.47.0.1
+      dev: ogstun3
+      dnn: internet3
