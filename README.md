@@ -740,6 +740,6 @@ tail -n 100 ~/UERANSIM/build/nr-gnb.log 2>/dev/null || echo "Check running backg
 
 
 # Live Performance Results
-![qos result](assets\QOS_result.png)
-![gnb result](assets\gnb_connection.png)
-![ue result](assets\ue_connection.jpeg)
+![qos result](assets/QOS_result.png)
+![gnb result](assets/gnb_connection.png)
+![ue result](assets/ue_connection.jpeg)
