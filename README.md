@@ -503,14 +503,7 @@ Captured performance logs demonstrate user-plane slice isolation and precise tra
 If we send duplicate data streams simultaneously over two independent network paths, the system will achieve ZERO packet loss AND dynamically utilize the fastest available path.
 
 $$
-\text{Redundancy}
-\implies
-\text{Packet Loss} \rightarrow 0%
-\quad \text{AND} \quad
-\text{Latency}_{\text{effective}}
-=
-
-\min(\text{Path}_1,\text{Path}_2)
+\text{Redundancy} \implies \text{Packet Loss} \to 0\% \quad \text{AND} \quad \text{Latency}_{\text{effective}} = \min(\text{Path}_1, \text{Path}_2)
 $$
 
 ---
